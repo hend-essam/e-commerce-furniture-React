@@ -1,0 +1,102 @@
+.about{
+  background-color: var(--main-color);
+  min-height: 598px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+}
+.about img{
+  max-height: 100%;
+}
+@media (max-width:800px){
+  .about img{
+    max-height: 400px;
+  }
+}
+.about .border-img{
+  position: relative;
+  margin: 0 20px 50px;
+  max-height: 515px;
+  max-width: 343px;
+}
+.about .border-img::before,
+.about .border-img::after{
+  content: '';
+  position: absolute;
+  border-top: 2px solid var(--color);
+  border-left: 2px solid var(--color);
+  width: 125px;
+  height: 190px;
+}
+.about .border-img::before{
+  top: -13px;
+  left: -13px;
+}
+.about .border-img::after{
+  transform: rotate(180deg);
+  bottom: -13px;
+  right: -13px;
+}
+.about .words{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-top: 50px;
+}
+.about .words .head h1{
+  color: var(--color);
+  letter-spacing: 3px;
+  position: relative;
+}
+.about .words .head h1::before,
+.about .words .head h1::after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 50px;
+  background-color: var(--color);
+  top: 18px
+}
+.about .words .head h1::before{
+  left: -55px;
+}
+.about .words .head h1::after{
+  right: -55px;
+}
+.over-view{
+  margin: 30px 0;
+}
+.over-view .bold{
+  font-weight: bold;
+  font-size: 22px;
+}
+.about .discription{
+  font-size: 19px;
+}
+.about .discription div{
+  margin-bottom: 50px;
+}
+.discription h3{
+  margin-bottom: 20px;
+}
+.services{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  gap: 45px 45px;
+}
+.service{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  text-align: center;
+}
+.service span{
+  font-size: 35px;
+}
+.service h3{
+  padding: 15px;
+}

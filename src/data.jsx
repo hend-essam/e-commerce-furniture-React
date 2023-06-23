@@ -1,0 +1,18 @@
+export const items = [
+  {id: 1,  price: 50,   img: "chair3.avif", Catalog: 'chair',   
+  bestSeller: true},
+  {id: 2,  price: 140,  img: "console3.jpg", Catalog: 'console', 
+  bestSeller: true},
+  {id: 3,  price: 1000, img: "chair2.jpg", Catalog: 'chair', 
+  bestSeller: true},
+  {id: 4,  price: 30,   img: "work-deck-1.jpg", Catalog: 'work deck',   
+  bestSeller: true},
+  {id: 5,  price: 140,  img: "console2.jpg", Catalog: 'console', 
+  bestSeller: true},
+  {id: 6,  price: 170,  img: "chair-2.avif", Catalog: 'chair',   
+  bestSeller: true},
+  {id: 7,  price: 140,  img: "work-desk2.jpg", Catalog: 'work deck', 
+  bestSeller: true},
+  {id: 8,  price: 30,   img: "work-desk3.jpg", Catalog: 'work deck',   
+  bestSeller: false},
+]

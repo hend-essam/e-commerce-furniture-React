@@ -1,0 +1,117 @@
+.contact{
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px 50px;
+  min-height: 598px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.main-details{
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact p{
+  color: gray;
+}
+.contact-ways{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.contact-way{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.contact-way h2{
+  padding: 10px;
+  min-width: 60px;
+  min-height: 60px;
+  border: 1px solid var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  justify-content: space-evenly;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
+}
+.icons i{
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid var(--color);
+  border-radius: 50%;
+}
+.contact .message{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 20px;
+  box-shadow: 0 0 8px 0.5px var(--color);
+  height: 538px;
+  width: 500px;
+}
+@media(max-width: 580px){
+  .main-details,
+  .message{
+    width: 95%;
+  }
+}
+.message i{
+  font-size: 35px;
+}
+.contact .message-head{
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+.inputs{
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+}
+.input{
+  background-color: transparent;
+  min-height: 45px;
+  width: 48%;
+  border: 1px solid var(--color);
+}
+.input:focus-visible,
+textarea:focus-visible{
+  outline-style: solid;
+  outline-width: 1.5px;
+  outline-color:var(--color);
+}
+textarea{
+  max-width: 100%;
+  min-width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--color);
+  height: 220px;
+  resize: none;
+}
+.input,
+textarea{
+  padding: 10px;
+}
+.input[type=submit]{
+  width: 100%;
+  background-color: var(--color);
+  color: white;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 15px;
+}

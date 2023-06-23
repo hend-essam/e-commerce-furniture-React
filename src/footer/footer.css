@@ -1,0 +1,34 @@
+.footer{
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--main-color);
+  justify-content: space-around;
+  border-top: 1px solid #8b684c54;
+  gap: 50px;
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.block h3{
+  margin-bottom: 7px;
+}
+.block a{
+  color: rgb(87, 87, 87);
+}
+.new-letter{
+  margin-top: 25px;
+}
+.new-letter input{
+  border: none;
+  border-bottom: 2px solid var(--color);
+  background-color: transparent;
+  padding: 10px;
+  margin-right: 15px;
+}
+.new-letter input:focus-visible{
+  outline-style: solid;
+  outline-width: 0;
+}
