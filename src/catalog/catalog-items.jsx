@@ -7,7 +7,7 @@ const CatalogItems = ({itemsData, handleAdd, addWishlist}) => {
             itemsData.length >= 1 ? (itemsData.map((item) => {
               return(
               <div  key={item.id} className='catalog-item'>
-                <img src = {`/img/${item.img}`} alt={item.Catalog} />
+                <img src = {`./img/${item.img}`} alt={item.Catalog} />
                 <div className='item-catalog'>
                   <div>{item.Catalog}</div>
                 <div>
