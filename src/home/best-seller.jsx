@@ -49,7 +49,7 @@ function BestSeller({itemsData, handleAdd, addWishlist}) {
                   return (
                     <div key={item.id} className="item">
                       <div className="shine">
-                        <img src = {`/img/${item.img}`} alt=""/>
+                        <img src = {`./img/${item.img}`} alt=""/>
                       </div>
                         <div className="discription">
                           <div className="type">{item.Catalog}</div>
