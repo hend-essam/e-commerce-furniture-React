@@ -1,44 +1,27 @@
-import './catalog.css';
-import { useState } from 'react';
+import "./catalog.css";
+import { useState, useMemo } from "react";
 
-const Filter = ({filterCatalog , allCatalog}) => {
+const Filter = ({ filterCatalog, allCatalog }) => {
+  const [activeCatalog, setActiveCatalog] = useState(allCatalog[0]);
 
-  /* filter by catalog */
-const onFilter = (catalog)=>{
+  const handleFilter = (catalog) => {
+    setActiveCatalog(catalog);
     filterCatalog(catalog);
-  }
+  };
 
-  const [state, change]= useState({
-    active: allCatalog[0],
-    objects: allCatalog
-  });
-
-  function toggleActive(index){
-    change({...state, active: state.objects[index]})
-  }
-  function toggleActiveStyle(index){
-    if(state.objects[index] === state.active){
-      return 'active';
-    } else {
-      return '';
-    }
-  }
-
-    return(
-      <ul>
-      {
-        allCatalog.length >= 1 ? (allCatalog.map((catalog , index)=>{
-          return(
-            <li key={index} 
-                onClick={()=> {onFilter(catalog); toggleActive(index)}}
-                className={toggleActiveStyle(index)}
-                >
-              {catalog.toUpperCase()}
-            </li>
-          )
-        })) : <h2>No results found</h2>
-      }
-      </ul>
-    );}
+  return (
+    <ul>
+      {allCatalog.map((catalog, index) => (
+        <li
+          key={index}
+          onClick={() => handleFilter(catalog)}
+          className={catalog === activeCatalog ? "active" : ""}
+        >
+          {catalog.toUpperCase()}
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 export default Filter;

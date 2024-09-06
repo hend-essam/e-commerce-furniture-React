@@ -1,36 +1,36 @@
-import CatalogItems from './catalog-items';
-import Filter from './catalog-filter';
-import { items } from '../data';
-import { useState } from 'react';
+import CatalogItems from "./catalog-items";
+import Filter from "./catalog-filter";
+import { items } from "../data";
+import { useState, useMemo } from "react";
 
-function Catalog({handleAdd, addWishlist}){
-  
+function Catalog({ handleAdd, addWishlist }) {
   const [itemsData, setItemsData] = useState(items);
-  const allCatalog = ['all',...new Set(items.map((item) => item.Catalog))];
-  
-  /* filter by catalog */ 
- const filterCatalog = (catalog) => {
-  if (catalog === 'all'){
-    setItemsData(items);
-  } else {
-    const filterArray = items.filter((item) => item.Catalog === catalog);
-    setItemsData(filterArray); 
-  };
- };
+  const allCatalog = useMemo(
+    () => ["all", ...new Set(items.map((item) => item.Catalog))],
+    [items]
+  );
 
-  return(
-    <>
-    <div className='catalog'>
-    <h1 className='catalog-header'>Catalog</h1>
-    <div className='catalog-body'>
-    <Filter filterCatalog={filterCatalog} allCatalog={allCatalog}/>
-    <CatalogItems 
-    itemsData={itemsData} 
-    handleAdd={handleAdd}
-    addWishlist={addWishlist}/>
+  const filterCatalog = (catalog) => {
+    if (catalog === "all") {
+      setItemsData(items);
+    } else {
+      const filterArray = items.filter((item) => item.Catalog === catalog);
+      setItemsData(filterArray);
+    }
+  };
+
+  return (
+    <div className="catalog">
+      <h1 className="catalog-header">Catalog</h1>
+      <div className="catalog-body">
+        <Filter filterCatalog={filterCatalog} allCatalog={allCatalog} />
+        <CatalogItems
+          itemsData={itemsData}
+          handleAdd={handleAdd}
+          addWishlist={addWishlist}
+        />
+      </div>
     </div>
-    </div>
-    </>
   );
 }
 
