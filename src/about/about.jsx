@@ -1,6 +1,4 @@
 import "./about.css";
-import aboutImg from "./about.jpg";
-
 const services = [
   {
     icon: <i className="fa-solid fa-rotate-left"></i>,
@@ -25,7 +23,7 @@ function About() {
     <div>
       <div className="about">
         <div className="border-img">
-          <img src={aboutImg} alt="" />
+          <img src="./img/about/about.jpg" alt="" />
         </div>
         <div className="words">
           <div className="head">

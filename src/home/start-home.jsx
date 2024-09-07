@@ -1,7 +1,4 @@
 import "./home.css";
-import photo from "./home-img/home.jpg";
-import photo1 from "./home-img/little-photo1.jpg";
-import photo2 from "./home-img/little-photo2.jpg";
 import Typed from "react-typed";
 import { Link } from "react-scroll";
 
@@ -21,7 +18,11 @@ function StartHome() {
           <br />
           <Typed {...typedSettings} />
         </h1>
-        <img src={photo} alt="furniture" className="home-photo-words" />
+        <img
+          src="./img/home/home.jpg"
+          alt="furniture"
+          className="home-photo-words"
+        />
         <p className="discription">
           We have 3000+ reviews and modern high <br /> quality furniture and
           products.
@@ -40,10 +41,18 @@ function StartHome() {
       </div>
       <div className="photos">
         <div className="little-photos">
-          <img src={photo1} alt="furniture" className="little-photo" />
-          <img src={photo2} alt="furniture" className="little-photo" />
+          <img
+            src="./img/home/little-photo1.jpg"
+            alt="furniture"
+            className="little-photo"
+          />
+          <img
+            src="./img/home/little-photo2.jpg"
+            alt="furniture"
+            className="little-photo"
+          />
         </div>
-        <img src={photo} alt="furniture" className="photo" />
+        <img src="./img/home/home.jpg" alt="furniture" className="photo" />
       </div>
     </div>
   );

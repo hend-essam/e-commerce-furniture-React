@@ -10,7 +10,7 @@ import Login from "./login/login";
 import Footer from "./footer/footer";
 import ScrollToTOP from "./scroll-to-top";
 import { items } from "./data";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 
 function App() {
   const [cart, setCart] = useState([]);
