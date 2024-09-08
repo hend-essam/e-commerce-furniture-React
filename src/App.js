@@ -18,6 +18,7 @@ function App() {
 
   const updateCartQuantity = (product, quantityChange) => {
     const productExist = cart.find((item) => item.id === product.id);
+    items.find((item) => item.id === product.id).inCart = true;
     if (productExist) {
       setCart(
         cart.map((item) =>
@@ -38,11 +39,13 @@ function App() {
   const decreaseQuantity = (product) => updateCartQuantity(product, -1);
 
   const handleRemove = (product) => {
+    items.find((item) => item.id === product.id).inCart = false;
     setCart(cart.filter((products) => products !== product));
   };
 
   const addWishlist = (product) => {
     const productExist = wishlist.find((item) => item.id === product.id);
+    items.find((item) => item.id === product.id).inWishlist = true;
     if (productExist) {
       setwishlist(
         wishlist.map((item) =>
@@ -55,6 +58,7 @@ function App() {
   };
 
   const removeWishlist = (product) => {
+    items.find((item) => item.id === product.id).inWishlist = false;
     setwishlist(wishlist.filter((products) => products !== product));
   };
 
