@@ -11,19 +11,13 @@ const CatalogItems = ({ itemsData, handleAdd, addWishlist }) => {
               <div>{item.Catalog}</div>
               <div>
                 <i
-                  className={
-                    item.inWishlist
-                      ? "fa-solid fa-heart on"
-                      : "fa-solid fa-heart"
-                  }
+                  className={`fa-solid fa-heart ${item.inWishlist ? "on" : ""}`}
                   onClick={() => addWishlist(item)}
                 ></i>
                 <i
-                  className={
-                    item.inCart
-                      ? "fa-solid fa-cart-shopping on"
-                      : "fa-solid fa-cart-shopping"
-                  }
+                  className={`fa-solid fa-cart-shopping ${
+                    item.inCart ? "on" : ""
+                  }`}
                   onClick={() => handleAdd(item)}
                 ></i>
               </div>
