@@ -1,5 +1,5 @@
 import "./catalog.css";
-import { useState, useMemo } from "react";
+import { useState } from "react";
 
 const Filter = ({ filterCatalog, allCatalog }) => {
   const [activeCatalog, setActiveCatalog] = useState(allCatalog[0]);

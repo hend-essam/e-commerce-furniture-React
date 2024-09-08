@@ -1,5 +1,5 @@
 import "./home.css";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 import { Link } from "react-scroll";
 
 const typedSettings = {
@@ -16,7 +16,7 @@ function StartHome() {
         <h1 className="typed">
           ALL YOU NEED TO
           <br />
-          <Typed {...typedSettings} />
+          <ReactTyped {...typedSettings} />
         </h1>
         <img
           src="./img/home/home.jpg"

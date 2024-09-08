@@ -7,7 +7,7 @@ function Catalog({ handleAdd, addWishlist }) {
   const [itemsData, setItemsData] = useState(items);
   const allCatalog = useMemo(
     () => ["all", ...new Set(items.map((item) => item.Catalog))],
-    [items]
+    []
   );
 
   const filterCatalog = (catalog) => {
