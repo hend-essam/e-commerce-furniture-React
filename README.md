@@ -22,18 +22,18 @@ Use the following command to install the project dependencies:
 npm install
 ```
 
-If you encounter issues during installation, you may try:
-
-```bash
-npm install --legacy-peer-deps
-```
-
-or
-
-```bash
-npm install --force
-```
-
+> If you encounter issues during installation, you may try:
+>
+> ```bash
+> npm install --legacy-peer-deps
+> ```
+>
+> or
+>
+> ```bash
+> npm install --force
+> ```
+    
 ### 4. Start the development server
 Once the dependencies are installed, you can start the development server with:
 
