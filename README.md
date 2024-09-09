@@ -52,3 +52,8 @@ Once the dependencies are installed, you can start the development server with:
 ```bash
 npm start
 ```
+
+## Screenshots
+
+### Homepage
+![Screenshot of the homepage with featured products](https://github.com/user-attachments/assets/4e00a47a-f47e-4677-8db6-f14e2463573a).
