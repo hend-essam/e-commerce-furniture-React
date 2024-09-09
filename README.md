@@ -1,3 +1,15 @@
+# E-commerce Furniture React Application
+
+This project is an e-commerce web application built with React for selling furniture products. It includes features such as adding products to a cart, saving items to a wishlist, and filtering items in the catalog.
+
+## Features
+
+- Browse furniture items in a catalog.
+- Add items to the cart and adjust quantities.
+- Save items to the wishlist.
+- Filter products by categories.
+- Responsive design using modern CSS practices.
+
 ## Installation and Setup
 
 Follow these steps to get the project up and running locally.
@@ -22,18 +34,18 @@ Use the following command to install the project dependencies:
 npm install
 ```
 
-If you encounter issues during installation, you may try:
-
-```bash
-npm install --legacy-peer-deps
-```
-
-or
-
-```bash
-npm install --force
-```
-
+> If you encounter issues during installation, you may try:
+>
+> ```bash
+> npm install --legacy-peer-deps
+> ```
+>
+> or
+>
+> ```bash
+> npm install --force
+> ```
+    
 ### 4. Start the development server
 Once the dependencies are installed, you can start the development server with:
 
